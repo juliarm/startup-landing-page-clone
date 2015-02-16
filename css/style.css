@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,26 +37,15 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: LightGray;
 }
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/*End of Reset*/
 
-div {
-	border: 1px solid Chocolate;
+/*Start of Custom Styles*/
+.content {
+	padding: 0px 15px;
 }
 
 /* Navigation Section */
@@ -63,10 +59,15 @@ div {
 	margin: 0 auto;
 }
 
-.logo {
+.top-navigation .logo {
 	width: 26px;
-	margin-left: 14px;
 	margin-top: 14px;
 }
+
+.top-navigation .links li{
+	float: right;
+	display: inline-block;
+}
+
 
 
